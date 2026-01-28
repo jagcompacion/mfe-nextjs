@@ -1,3 +1,5 @@
+import { SendToDeviceButton } from "./send-to-device-button";
+
 type Props = {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 };
@@ -45,12 +47,7 @@ export default async function Home({ searchParams }: Props) {
           </div>
         )}
 
-        <a
-          href="/device"
-          className="rounded-full bg-purple-600 hover:bg-purple-700 px-6 py-3 text-white font-medium transition-colors"
-        >
-          Go to Device App &rarr;
-        </a>
+        <SendToDeviceButton />
       </main>
     </div>
   );
