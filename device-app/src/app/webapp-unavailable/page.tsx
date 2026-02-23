@@ -1,6 +1,6 @@
-export default function DeviceUnavailable() {
+export default function WebappUnavailable() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-slate-900 to-slate-700">
+    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-purple-600 to-blue-500">
       <main className="flex flex-col items-center gap-8 p-8">
         <div className="rounded-2xl bg-white/10 backdrop-blur-lg p-8 shadow-2xl">
           <div className="flex justify-center mb-4">
@@ -21,22 +21,22 @@ export default function DeviceUnavailable() {
             </div>
           </div>
           <h1 className="text-3xl font-bold text-white mb-4 text-center">
-            Device App Unavailable
+            Web App Unavailable
           </h1>
           <p className="text-lg text-white/80 max-w-md text-center">
-            The device-app is not currently running. Please start it on port 3001.
+            The web-app is not currently running. Please start it on port 3001.
           </p>
-          <div className="mt-6 bg-slate-800/50 rounded-lg p-4">
+          <div className="mt-6 bg-purple-800/50 rounded-lg p-4">
             <p className="text-sm text-white/60 font-mono">
-              cd device-app && npm run dev
+              cd web-app && npm run dev
             </p>
           </div>
         </div>
         <a
           href="/"
-          className="rounded-full bg-purple-600 hover:bg-purple-700 px-6 py-3 text-white font-medium transition-colors"
+          className="rounded-full bg-slate-700 hover:bg-slate-800 px-6 py-3 text-white font-medium transition-colors"
         >
-          &larr; Back to Web App
+          &larr; Back to Device App
         </a>
       </main>
     </div>
